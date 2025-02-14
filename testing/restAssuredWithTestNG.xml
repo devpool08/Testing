@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RestAssuredUpdatedTest" parallel="methods">
+    <test verbose="2" preserve-order="true" name="TestRestAssured">
+        <classes>
+            <class name="com.Test.testing.restAssuredUpd.a_basic.TestRestAssured"/>
+            <class name="com.Test.testing.restAssuredUpd.a_basic.TestRestAssuredStaticImpl"/>
+        </classes>
+    </test>
+</suite>
