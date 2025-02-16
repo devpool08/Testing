@@ -1,34 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="tests">
-    <test verbose="2" preserve-order="true" name="TestNG">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/PS/ProjectsFiles/TestNGTasks/TestNGAndRestAssured">
         <classes>
-            <class name="com.Test.testing.restAssured.TestPostMethods">
+            <class name="org.example.testNG.TestNGBasic">
                 <methods>
-                    <include name="testAuthentication"/>
-                    <include name="testFileUpload"/>
-                    <include name="testCustomFilters"/>
+                    <include name="testFirstTest"/>
+                    <include name="testSecondTest"/>
+                    <include name="testThirdTest"/>
+                    <include name="testFourthTest"/>
+                    <include name="testFifthTest"/>
+                    <include name="testTestDemo"/>
                 </methods>
             </class>
-            <class name="com.Test.testing.restAssured.TestRestAssuredGetTesting">
+            <class name="org.example.testNG.TestNGDataProvider">
                 <methods>
-                    <include name="testGet"/>
-                </methods>
-            </class>
-            <class name="com.Test.testing.restAssured.TestRestAssuredSomeMoreFeatures">
-                <methods>
+                    <include name="testId"/>
                     <include name="testAddUser"/>
                     <include name="testUpdateUser"/>
-                    <include name="testDeleteUser"/>
-                </methods>
-            </class>
-            <class name="com.Test.testing.restAssured.TestStaticImplementation">
-                <methods>
-                    <include name="testGetWithInstanceImplementation"/>
-                    <include name="testGetCheckId"/>
-                    <include name="testGetUserById"/>
-                    <include name="testWithCustomLogging"/>
-                    <include name="testResponseTime"/>
                 </methods>
             </class>
         </classes>

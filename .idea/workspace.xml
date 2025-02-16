@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/UnitTesting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoUploadFile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/MD_Files/RestAssured.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/MD_Files/TestNG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/restAssured.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/src/test/java/org/example/restAssured/a_basic/TestRestAssured.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/src/test/java/org/example/restAssured/a_basic/TestRestAssuredStaticImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/src/test/java/org/example/restAssured/b_get_post_methods/C_TestRAGetAndPost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/src/test/java/org/example/testNG/TestListiner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/src/test/java/org/example/testNG/TestNGBasic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/src/test/java/org/example/testNG/TestNGDataProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/test-output/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGAndRestAssured/testng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restAssuredWithTestNG.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Test/testing/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Test/testing/restAssured/TestPostMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Test/testing/restAssured/TestRestAssuredGetTesting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Test/testing/restAssured/TestRestAssuredSomeMoreFeatures.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Test/testing/restAssured/TestStaticImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Test/testing/restAssuredUpd/a_basic/TestRestAssured.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Test/testing/restAssuredUpd/a_basic/TestRestAssuredStaticImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Test/testing/restAssuredUpd/b_get_post_methods/C_TestRAGetAndPost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "devpool08"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/devpool08/UnitTesting.git",
+    "accountId": "6a5853a7-4e73-4c68-bedd-ff8467e0d309"
+  }
+}]]></component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2t7YmuLqwJtfED9yt76KZGsGsb7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.RestAssured.executor": "Run",
+    "TestNG.TestNG.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/PS/ProjectsFiles/UnitTesting/restAssured.xml"
+  }
+}]]></component>
+  <component name="RunManager" selected="TestNG.TestNG">
+    <configuration name="RestAssured" type="TestNG">
+      <module name="TestNGAndRestAssured" />
+      <shortenClasspath name="NONE" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/restAssured.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter2" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNG" type="TestNG">
+      <module name="TestNGAndRestAssured" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter2" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.RestAssured" />
+      <item itemvalue="TestNG.TestNG" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="" />
+      <created>1739704742356</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739704742356</updated>
+    </task>
+    <servers />
+  </component>
+</project>
