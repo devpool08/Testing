@@ -20,6 +20,7 @@
                     <include name="testUpdateUser"/>
                 </methods>
             </class>
+            <class name="org.example.testNG.TestAssertation"/>
         </classes>
     </test>
 </suite>
