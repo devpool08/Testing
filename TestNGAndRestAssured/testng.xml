@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/PS/ProjectsFiles/TestNGTasks/TestNGAndRestAssured">
+        <classes>
+            <class name="org.example.testNG.TestNGBasic">
+                <methods>
+                    <include name="testFirstTest"/>
+                    <include name="testSecondTest"/>
+                    <include name="testThirdTest"/>
+                    <include name="testFourthTest"/>
+                    <include name="testFifthTest"/>
+                    <include name="testTestDemo"/>
+                </methods>
+            </class>
+            <class name="org.example.testNG.TestNGDataProvider">
+                <methods>
+                    <include name="testId"/>
+                    <include name="testAddUser"/>
+                    <include name="testUpdateUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

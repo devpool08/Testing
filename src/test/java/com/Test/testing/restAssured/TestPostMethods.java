@@ -1,17 +1,13 @@
 package com.Test.testing.restAssured;
 
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
-
-import io.restassured.filter.log.RequestLoggingFilter;
-import io.restassured.filter.log.ResponseLoggingFilter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.io.File;
 
 public class TestPostMethods {
-    private final String FILE_PATH="C:\\PS\\ProjectsFiles\\UnitTesting\\DemoUploadFile";//Make sure to chane the file path
+    private static final String FILE_PATH="C:\\PS\\ProjectsFiles\\UnitTesting\\DemoUploadFile";//Make sure to chane the file path
 
     // Setup method to initialize base URI and base path
     @BeforeClass

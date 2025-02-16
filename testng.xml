@@ -31,21 +31,6 @@
                     <include name="testResponseTime"/>
                 </methods>
             </class>
-            <class name="com.Test.testing.testngLearning.demo2Testing">
-                <methods>
-                    <include name="testMethod1"/>
-                    <include name="testMethod2"/>
-                </methods>
-            </class>
-            <class name="com.Test.testing.testngLearning.demoTesting">
-                <methods>
-                    <include name="test"/>
-                    <include name="test2"/>
-                    <include name="test3"/>
-                    <include name="test4"/>
-                    <include name="test5"/>
-                </methods>
-            </class>
         </classes>
     </test>
 </suite>
