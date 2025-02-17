@@ -5,6 +5,9 @@
         <classes>
             <class name="org.example.restAssured.a_basic.TestRestAssured"/>
             <class name="org.example.restAssured.a_basic.TestRestAssuredStaticImpl"/>
+            <class name="org.example.restAssured.b_get_post_methods.TestPutAndPost"/>
+            <class name="org.example.restAssured.serialization.TestSerialization1"></class>
+            <class name="org.example.restAssured.usingHamcrest.RestAPITests"></class>
         </classes>
     </test>
 </suite>

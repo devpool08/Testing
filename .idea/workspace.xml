@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Rename artifactId from TestNGAndRestAssured to Testing in pom.xml" />
+    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Rename module references from TestNGAndRestAssured to Testing in project configuration files">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/b_get_post_methods/TestPutAndPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/serialization/TestSerialization1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/usingHamcrest/RestAPITests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restAssured.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restAssured.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/b_get_post_methods/C_TestRAGetAndPost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,15 +65,20 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;TestNG.C:/PS/ProjectsFiles/UnitTesting/test-output/testng-failed.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RestAPITests.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.RestAssured.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Serialization1.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestAssertation.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestNG.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestPutAndPost.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestRAGetAndPost.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestSerialization1.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/PS/ProjectsFiles/UnitTesting/restAssured.xml&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/PS/ProjectsFiles/Testing&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.TestNG">
+  <component name="RunManager" selected="TestNG.RestAssured">
     <configuration name="RestAssured" type="TestNG">
       <module name="Testing" />
       <shortenClasspath name="NONE" />
@@ -130,7 +145,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739767711263</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Rename module references from TestNGAndRestAssured to Testing in project configuration files">
+      <option name="closed" value="true" />
+      <created>1739767757201</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739767757201</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Rename module references from TestNGAndRestAssured to Testing in project configuration files">
+      <option name="closed" value="true" />
+      <created>1739781841209</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739781841209</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +177,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rename artifactId from TestNGAndRestAssured to Testing in pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename artifactId from TestNGAndRestAssured to Testing in pom.xml" />
+    <MESSAGE value="Rename module references from TestNGAndRestAssured to Testing in project configuration files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename module references from TestNGAndRestAssured to Testing in project configuration files" />
   </component>
 </project>
