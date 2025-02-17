@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/MD_Files/TestNG.md" beforeDir="false" afterPath="$PROJECT_DIR$/MD_Files/TestNG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-    </list>
+    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Rename artifactId from TestNGAndRestAssured to Testing in pom.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +65,7 @@
 }</component>
   <component name="RunManager" selected="TestNG.TestNG">
     <configuration name="RestAssured" type="TestNG">
-      <module name="TestNGAndRestAssured" />
+      <module name="Testing" />
       <shortenClasspath name="NONE" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/restAssured.xml" />
       <option name="PACKAGE_NAME" value="" />
@@ -88,7 +85,7 @@
       </method>
     </configuration>
     <configuration name="TestNG" type="TestNG">
-      <module name="TestNGAndRestAssured" />
+      <module name="Testing" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -125,6 +122,30 @@
       <option name="presentableId" value="Default" />
       <updated>1739704742356</updated>
     </task>
+    <task id="LOCAL-00001" summary="Rename artifactId from TestNGAndRestAssured to Testing in pom.xml">
+      <option name="closed" value="true" />
+      <created>1739767711263</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739767711263</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Rename artifactId from TestNGAndRestAssured to Testing in pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename artifactId from TestNGAndRestAssured to Testing in pom.xml" />
   </component>
 </project>
