@@ -1,4 +1,4 @@
-package org.example.restAssured.serialization;
+package org.example.restAssured.c_serialization;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
