@@ -15,7 +15,8 @@ public class TestPreemptiveAuth {
     }
 
     @Test
-    public void testBasicAuth() {
+    public void testPreemptiveAuthValidInput() {
+        System.out.println(baseURI);
         given().
                 auth().
                 digest("postman", "password")
@@ -29,7 +30,7 @@ public class TestPreemptiveAuth {
     }
 
     @Test(expectedExceptions = AssertionError.class)
-    public void testInvalidBasicAuth() {
+    public void testPreemptiveAuthInvalidInput() {
         given().
                 auth().
                 digest("postmannbfkjne", "passwordkjnevln")

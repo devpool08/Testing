@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Add new REST API tests and update project configuration for Testing module">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/d_schemaValidation/TestJSONValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestBasicAuth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestDigestAuth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestOAuth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestPreemptiveAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Add .env file and update .gitignore to exclude environment variable files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restAssured.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restAssured.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/schemaValidation/TestJSONValidation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/serialization/TestSerialization1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestSerialization1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestBasicAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestBasicAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestDigestAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestDigestAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestOAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestOAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestPreemptiveAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestPreemptiveAuth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,28 +63,39 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/PS/ProjectsFiles/UnitTesting/restAssured.xml.executor": "Run",
     "TestNG.C:/PS/ProjectsFiles/UnitTesting/test-output/testng-failed.xml.executor": "Run",
     "TestNG.RestAPITests.executor": "Run",
     "TestNG.RestAssured.executor": "Run",
     "TestNG.Serialization1.executor": "Run",
     "TestNG.TestAssertation.executor": "Run",
     "TestNG.TestBasicAuth.executor": "Run",
+    "TestNG.TestBasicAuth.testBasicAuth.executor": "Run",
     "TestNG.TestDigestAuth.executor": "Run",
     "TestNG.TestJSONValidation.executor": "Run",
     "TestNG.TestNG.executor": "Run",
     "TestNG.TestOAuth.executor": "Run",
+    "TestNG.TestPreemptiveAuth.executor": "Run",
     "TestNG.TestPutAndPost.executor": "Run",
     "TestNG.TestRAGetAndPost.executor": "Run",
     "TestNG.TestSerialization1.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/PS/ProjectsFiles/Testing"
+    "last_opened_file_path": "C:/PS/ProjectsFiles/Testing",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PS\ProjectsFiles\UnitTesting\target\classes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.RestAssured">
     <configuration name="RestAssured" type="TestNG">
       <module name="Testing" />
       <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/restAssured.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -102,6 +108,7 @@
       <properties />
       <listeners>
         <listener class="org.testng.reporters.EmailableReporter2" />
+        <listener class="org.testng.reporters.FailedReporter" />
       </listeners>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,7 +184,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739940578280</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add new REST API tests and update project configuration for Testing module">
+      <option name="closed" value="true" />
+      <created>1739949829970</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739949829970</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add .env file and update .gitignore to exclude environment variable files">
+      <option name="closed" value="true" />
+      <created>1739950059909</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739950059909</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +218,7 @@
     <MESSAGE value="Rename artifactId from TestNGAndRestAssured to Testing in pom.xml" />
     <MESSAGE value="Rename module references from TestNGAndRestAssured to Testing in project configuration files" />
     <MESSAGE value="Add new REST API tests and update project configuration for Testing module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new REST API tests and update project configuration for Testing module" />
+    <MESSAGE value="Add .env file and update .gitignore to exclude environment variable files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .env file and update .gitignore to exclude environment variable files" />
   </component>
 </project>

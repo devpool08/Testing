@@ -14,7 +14,8 @@ public class TestDigestAuth {
     }
 
     @Test
-    public void testBasicAuth() {
+    public void testDigestAuthValidInput() throws InterruptedException {
+        System.out.println(baseURI);
         given().
                 auth().
                 preemptive().
@@ -29,7 +30,7 @@ public class TestDigestAuth {
     }
 
     @Test(expectedExceptions = AssertionError.class)
-    public void testInvalidBasicAuth() {
+    public void testDigestAuthInvalidInput() {
         given().
                 auth().preemptive().
                 basic("postmannbfkjne", "passwordkjnevln").

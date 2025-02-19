@@ -20,28 +20,25 @@ public class TestOAuth {
     }
 
     @Test
-    public void testOAuth() {
+    public void testOAuthValidInput() {
+        System.out.println(baseURI);
         given().
                 auth().
                 oauth2(TOKEN).
-                when().
+           when().
                 get("/user/repos").
-                then().
-                statusCode(HttpStatus.SC_OK).
-                log().
-                body();
+           then().
+                statusCode(HttpStatus.SC_OK);
     }
 
     @Test(expectedExceptions = AssertionError.class)
-    public void testInvalidOAuth() {
+    public void testInvalidOAuthInvalidInput() {
         given().
                 auth().
                 oauth2(TOKEN + "Invalid").
-                when().
+            when().
                 get("/user/repos").
-                then().
-                statusCode(HttpStatus.SC_OK).
-                log().
-                body();
+            then().
+                statusCode(HttpStatus.SC_OK);
     }
 }
