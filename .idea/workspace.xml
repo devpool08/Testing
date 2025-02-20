@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Add .env file and update .gitignore to exclude environment variable files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restAssured.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restAssured.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestBasicAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestBasicAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestDigestAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestDigestAuth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestOAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestOAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestPreemptiveAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestPreemptiveAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +69,7 @@
     "TestNG.TestJSONValidation.executor": "Run",
     "TestNG.TestNG.executor": "Run",
     "TestNG.TestOAuth.executor": "Run",
+    "TestNG.TestOAuth.testOAuthValidInput.executor": "Run",
     "TestNG.TestPreemptiveAuth.executor": "Run",
     "TestNG.TestPutAndPost.executor": "Run",
     "TestNG.TestRAGetAndPost.executor": "Run",
@@ -91,7 +86,7 @@
       <recent name="C:\PS\ProjectsFiles\UnitTesting\target\classes" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RestAssured">
+  <component name="RunManager">
     <configuration name="RestAssured" type="TestNG">
       <module name="Testing" />
       <shortenClasspath name="NONE" />
