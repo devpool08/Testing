@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Add .env file and update .gitignore to exclude environment variable files">
+    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Update workspace configuration and .gitignore to exclude IDE files">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestOAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestOAuth.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739950059909</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update workspace configuration and .gitignore to exclude IDE files">
+      <option name="closed" value="true" />
+      <created>1740024025608</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740024025608</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +222,7 @@
     <MESSAGE value="Rename module references from TestNGAndRestAssured to Testing in project configuration files" />
     <MESSAGE value="Add new REST API tests and update project configuration for Testing module" />
     <MESSAGE value="Add .env file and update .gitignore to exclude environment variable files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add .env file and update .gitignore to exclude environment variable files" />
+    <MESSAGE value="Update workspace configuration and .gitignore to exclude IDE files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update workspace configuration and .gitignore to exclude IDE files" />
   </component>
 </project>

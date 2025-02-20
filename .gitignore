@@ -1641,5 +1641,5 @@ doc/api/
 .flutter-plugins
 .flutter-plugins-dependencies
 
-.idea/
+.idea/*
 
