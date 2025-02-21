@@ -27,7 +27,7 @@ public class RestAPITests {
 
     @Test
     public void whenRequestGet_thenOK() {
-        when().request("GET", GET_URL).then().statusCode(200);
+        when().request("GeT", GET_URL).then().statusCode(200);
     }
 
     @Test
@@ -47,7 +47,7 @@ public class RestAPITests {
         System.out.println("Response time: " + time + " ms");
         get(GET_URL).
                 then().
-                time(lessThan(5000L));
+                time(lessThan(3000L));
     }
 
     @Test

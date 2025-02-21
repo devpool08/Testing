@@ -1,14 +1,18 @@
 package org.example.restAssured.c_serialization;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.SneakyThrows;
+import lombok.NoArgsConstructor;
+import org.apache.http.HttpStatus;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 class User {
     private String name;
     private String job;
@@ -17,48 +21,45 @@ class User {
 public class TestSerialization1 {
 
     private static final String POST_URL = "/users";
-    private static final String PUT_URL = "/users/2/";
-    private String json;
+    private static final String GET_URL = "/users/2";
     private User user;
     private ObjectMapper objectMapper;
 
-    @SneakyThrows
     @BeforeClass
     public void setUp() {
-        // Create a User object
-        user = new User();
-        user.setName("John Doe");
-        user.setJob("Software Developer");
-
-        // Use ObjectMapper to serialize the User object to JSON
-        objectMapper = new ObjectMapper();
-        json = objectMapper.writeValueAsString(user);
-
-        System.out.println("Serialized JSON: " + json);
-
-        // Sample JSON response
-        String jsonResponse = "{\"name\":\"Alice\", \"job\":\"Engineer\"}";
-
-        // Use ObjectMapper to deserialize the JSON response to a User object
-        User deserializedUser = objectMapper.readValue(jsonResponse, User.class);
-
-        System.out.println("Deserialized User: " + deserializedUser.getName() + ", " + deserializedUser.getJob());
-
         baseURI = "https://reqres.in/";
         basePath = "/api/";
+        user = new User("John Doe", "Software Developer");
+        objectMapper = new ObjectMapper();
     }
 
     @Test
-    public void testPostRequest() {
-        given().body(json).post(POST_URL).then().statusCode(201);
+    public void sendSerializedRequest() {
+        try {
+            String json = objectMapper.writeValueAsString(user);
+            given().
+                    body(json).
+                    post(POST_URL).
+                    then().
+                    statusCode(HttpStatus.SC_CREATED);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-    @SneakyThrows
     @Test
-    public void testPutRequest() {
-        user.setJob("Engineer");
-        json=objectMapper.writeValueAsString(user);
-        given().body(json).put(PUT_URL).then().statusCode(200);
-
+    public void deserializeJsonResponse() {
+        try {
+            String response = given().
+                    get(GET_URL).
+                    then().
+                    statusCode(HttpStatus.SC_OK).
+                    extract().
+                    asString();
+            User user1 = objectMapper.readValue(response, User.class);
+            System.out.println(user1);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

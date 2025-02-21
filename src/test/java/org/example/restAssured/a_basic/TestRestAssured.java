@@ -50,4 +50,5 @@ public class TestRestAssured {
                 .then() // Then assert the content type
                 .contentType("application/json"); // Assert the content type is application/json
     }
+
 }
