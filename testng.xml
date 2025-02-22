@@ -51,6 +51,13 @@
             <class name="org.example.restAssured.c_serialization.TestDeserialization">
                 <methods>
                     <include name="deserializeJsonResponse"/>
+                    <include name="deserializeJsonResponse2"/>
+                </methods>
+            </class>
+            <class name="org.example.restAssured.c_serialization.TestDeserializer">
+                <methods>
+                    <include name="testDeserializer"/>
+                    <include name="testDeserializer2"/>
                 </methods>
             </class>
             <class name="org.example.restAssured.c_serialization.TestSerialization">

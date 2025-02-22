@@ -2,6 +2,8 @@ package org.example.restAssured.c_serialization;
 
 
 import static io.restassured.RestAssured.*;
+
+import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
 import lombok.SneakyThrows;
@@ -57,10 +59,8 @@ public class TestDeserializer {
                 extract().
                 body().as(List.class);
         for (Object post : posts) {
-            System.out.println("Title: " + mapper.readValue(mapper.writeValueAsString(post), Post.class).getTitle());
-            System.out.println("Body: " + mapper.readValue(mapper.writeValueAsString(post), Post.class).getBody());
-            System.out.println("User ID: " + mapper.readValue(mapper.writeValueAsString(post), Post.class).getUserId());
-            System.out.println("Post ID: " + mapper.readValue(mapper.writeValueAsString(post), Post.class).getId());
+            Post post1 = mapper.readValue(mapper.writeValueAsString(post), Post.class);
+            System.out.println("Id is : " + post1.getId());
         }
         System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
 
@@ -70,14 +70,11 @@ public class TestDeserializer {
                 extract().
                 body().as(Post[].class);
         for (Post post : posts2) {
-            System.out.println("Title: " + post.getTitle());
-            System.out.println("Body: " + post.getBody());
-            System.out.println("User ID: " + post.getUserId());
             System.out.println("Post ID: " + post.getId());
 
         }
         Post post = posts2[0];
-        System.out.println("Title: " + post.getTitle());
+        System.out.println(post.toString());
     }
 
 

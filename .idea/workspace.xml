@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Refactor authentication tests to improve error handling and update test reports">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestDeserializer.java" afterDir="false" />
+    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Add deserialization tests and refactor test structure for improved clarity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestDeserialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestDeserialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,59 +97,7 @@
       <recent name="C:\PS\ProjectsFiles\UnitTesting\target\classes" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestDeserializer">
-    <configuration name="TestDeserialization" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.restAssured.c_serialization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.restAssured.c_serialization" />
-      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.c_serialization.TestDeserialization" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDeserializer" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.restAssured.c_serialization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.restAssured.c_serialization" />
-      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.c_serialization.TestDeserializer" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDeserializer.testDeserializer" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.restAssured.c_serialization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.restAssured.c_serialization" />
-      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.c_serialization.TestDeserializer" />
-      <option name="METHOD_NAME" value="testDeserializer" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestDeserializer.testDeserializer2">
     <configuration name="TestDeserializer.testDeserializer2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Testing" />
       <extension name="coverage">
@@ -186,26 +133,18 @@
       </option>
       <option name="PROPERTIES_FILE" value="" />
       <properties />
-      <listeners>
-        <listener class="org.testng.reporters.EmailableReporter2" />
-      </listeners>
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="TestNG.TestNG" />
-      <item itemvalue="TestNG.TestDeserialization" />
-      <item itemvalue="TestNG.TestDeserializer" />
-      <item itemvalue="TestNG.TestDeserializer.testDeserializer" />
       <item itemvalue="TestNG.TestDeserializer.testDeserializer2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestDeserializer" />
         <item itemvalue="TestNG.TestDeserializer.testDeserializer2" />
-        <item itemvalue="TestNG.TestDeserializer.testDeserializer" />
-        <item itemvalue="TestNG.TestDeserialization" />
       </list>
     </recent_temporary>
   </component>
@@ -298,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740204419979</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add deserialization tests and refactor test structure for improved clarity">
+      <option name="closed" value="true" />
+      <created>1740241775243</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740241775243</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -320,21 +267,7 @@
     <MESSAGE value="Update workspace configuration and .gitignore to exclude IDE files" />
     <MESSAGE value="Refactor package structure for serialization tests" />
     <MESSAGE value="Refactor authentication tests to improve error handling and update test reports" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor authentication tests to improve error handling and update test reports" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestDeserializer.java</url>
-          <line>53</line>
-          <properties class="org.example.restAssured.c_serialization.TestDeserializer" method="testDeserializer2">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Add deserialization tests and refactor test structure for improved clarity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add deserialization tests and refactor test structure for improved clarity" />
   </component>
 </project>
