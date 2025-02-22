@@ -2,8 +2,6 @@ package org.example.restAssured.c_serialization;
 
 
 import static io.restassured.RestAssured.*;
-
-import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
 import lombok.SneakyThrows;
