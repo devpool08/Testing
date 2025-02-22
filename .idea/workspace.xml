@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Refactor package structure for serialization tests">
+    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Refactor authentication tests to improve error handling and update test reports">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestDeserializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestBasicAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestBasicAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestDigestAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestDigestAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestOAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestOAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestPreemptiveAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestPreemptiveAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestDeserialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestDeserialization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,47 +54,121 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/PS/ProjectsFiles/UnitTesting/restAssured.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/PS/ProjectsFiles/UnitTesting/test-output/testng-failed.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RestAPITests.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RestAPITests.givenUrl_whenSuccessOnGetsResponseAndJsonHasRequiredKV_thenCorrect.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RestAPITests.whenLogRequest_thenOK.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RestAPITests.whenMeasureResponseTime_thenOK.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RestAPITests.whenRequestGet_thenOK.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RestAPITests.whenRequestedPost_thenCreated.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RestAssured.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Serialization1.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestAssertation.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestBasicAuth.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestBasicAuth.testBasicAuth.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestDigestAuth.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestJSONValidation.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestNG.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestOAuth.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestOAuth.testOAuthValidInput.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestPreemptiveAuth.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestPutAndPost.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRAGetAndPost.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRestAssured.testOpenWebPage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestSerialization1.executor&quot;: &quot;Run&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/PS/ProjectsFiles/Testing&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/PS/ProjectsFiles/UnitTesting/restAssured.xml.executor": "Run",
+    "TestNG.C:/PS/ProjectsFiles/UnitTesting/test-output/testng-failed.xml.executor": "Run",
+    "TestNG.RestAPITests.executor": "Run",
+    "TestNG.RestAPITests.givenUrl_whenSuccessOnGetsResponseAndJsonHasRequiredKV_thenCorrect.executor": "Run",
+    "TestNG.RestAPITests.whenLogRequest_thenOK.executor": "Run",
+    "TestNG.RestAPITests.whenMeasureResponseTime_thenOK.executor": "Run",
+    "TestNG.RestAPITests.whenRequestGet_thenOK.executor": "Run",
+    "TestNG.RestAPITests.whenRequestedPost_thenCreated.executor": "Run",
+    "TestNG.RestAssured.executor": "Run",
+    "TestNG.Serialization1.executor": "Run",
+    "TestNG.TestAssertation.executor": "Run",
+    "TestNG.TestBasicAuth.executor": "Run",
+    "TestNG.TestBasicAuth.testBasicAuth.executor": "Run",
+    "TestNG.TestDeserialization.executor": "Run",
+    "TestNG.TestDeserializer.executor": "Run",
+    "TestNG.TestDeserializer.testDeserializer.executor": "Run",
+    "TestNG.TestDeserializer.testDeserializer2.executor": "Run",
+    "TestNG.TestDigestAuth.executor": "Run",
+    "TestNG.TestJSONValidation.executor": "Run",
+    "TestNG.TestNG.executor": "Run",
+    "TestNG.TestOAuth.executor": "Run",
+    "TestNG.TestOAuth.testOAuthValidInput.executor": "Run",
+    "TestNG.TestPreemptiveAuth.executor": "Run",
+    "TestNG.TestPutAndPost.executor": "Run",
+    "TestNG.TestRAGetAndPost.executor": "Run",
+    "TestNG.TestRestAssured.testOpenWebPage.executor": "Run",
+    "TestNG.TestSerialization1.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/PS/ProjectsFiles/QEML-4-API-Testing/Bytes3/m2-pss",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\PS\ProjectsFiles\UnitTesting\target\classes" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.TestDeserializer">
+    <configuration name="TestDeserialization" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.restAssured.c_serialization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.restAssured.c_serialization" />
+      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.c_serialization.TestDeserialization" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDeserializer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.restAssured.c_serialization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.restAssured.c_serialization" />
+      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.c_serialization.TestDeserializer" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDeserializer.testDeserializer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.restAssured.c_serialization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.restAssured.c_serialization" />
+      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.c_serialization.TestDeserializer" />
+      <option name="METHOD_NAME" value="testDeserializer" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDeserializer.testDeserializer2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.restAssured.c_serialization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.restAssured.c_serialization" />
+      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.c_serialization.TestDeserializer" />
+      <option name="METHOD_NAME" value="testDeserializer2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestNG" type="TestNG">
       <module name="Testing" />
       <shortenClasspath name="NONE" />
@@ -122,6 +193,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.TestNG" />
+      <item itemvalue="TestNG.TestDeserialization" />
+      <item itemvalue="TestNG.TestDeserializer" />
+      <item itemvalue="TestNG.TestDeserializer.testDeserializer" />
+      <item itemvalue="TestNG.TestDeserializer.testDeserializer2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestDeserializer" />
+        <item itemvalue="TestNG.TestDeserializer.testDeserializer2" />
+        <item itemvalue="TestNG.TestDeserializer.testDeserializer" />
+        <item itemvalue="TestNG.TestDeserialization" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -204,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740203535827</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Refactor authentication tests to improve error handling and update test reports">
+      <option name="closed" value="true" />
+      <created>1740204419979</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740204419979</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +319,22 @@
     <MESSAGE value="Add .env file and update .gitignore to exclude environment variable files" />
     <MESSAGE value="Update workspace configuration and .gitignore to exclude IDE files" />
     <MESSAGE value="Refactor package structure for serialization tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor package structure for serialization tests" />
+    <MESSAGE value="Refactor authentication tests to improve error handling and update test reports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor authentication tests to improve error handling and update test reports" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestDeserializer.java</url>
+          <line>53</line>
+          <properties class="org.example.restAssured.c_serialization.TestDeserializer" method="testDeserializer2">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

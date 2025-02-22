@@ -41,6 +41,7 @@ public class TestDeserialization {
         baseURI = "https://api.restful-api.dev/";
         basePath = "objects/";
         objectMapper = new ObjectMapper();
+
     }
 
     @Test
@@ -49,5 +50,11 @@ public class TestDeserialization {
         System.out.println(response);
         Product p = objectMapper.readValue(response, Product.class);
         System.out.println(p.toString());
+    }
+
+    @Test
+    public void deserializeJsonResponse2() throws JsonProcessingException {
+        Product product = given().get(REQUEST_PATH).then().extract().body().as(Product.class);
+        System.out.println(product.toString());
     }
 }
