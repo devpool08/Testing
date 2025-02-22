@@ -27,7 +27,7 @@ public class TestBasicAuth {
 
     }
 
-    @Test(expectedExceptions = AssertionError.class)
+    @Test
     public void testInvalidBasicAuth() {
 
         given().
@@ -36,6 +36,6 @@ public class TestBasicAuth {
                 when().
                 get("/basic-auth").
                 then().
-                statusCode(HttpStatus.SC_OK);
+                statusCode(HttpStatus.SC_UNAUTHORIZED);
     }
 }

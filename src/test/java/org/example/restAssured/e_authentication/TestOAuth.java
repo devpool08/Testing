@@ -31,7 +31,7 @@ public class TestOAuth {
                 statusCode(HttpStatus.SC_OK);
     }
 
-    @Test(expectedExceptions = AssertionError.class)
+    @Test
     public void testInvalidOAuthInvalidInput() {
         given().
                 auth().
@@ -39,6 +39,6 @@ public class TestOAuth {
             when().
                 get("/user/repos").
             then().
-                statusCode(HttpStatus.SC_OK);
+                statusCode(HttpStatus.SC_UNAUTHORIZED);
     }
 }

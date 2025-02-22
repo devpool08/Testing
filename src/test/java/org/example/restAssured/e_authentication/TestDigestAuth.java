@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 
 public class TestDigestAuth {
+
     @BeforeClass
     public void setUp() {
         // Set up basic authentication credentials
@@ -14,30 +15,28 @@ public class TestDigestAuth {
     }
 
     @Test
-    public void testDigestAuthValidInput() throws InterruptedException {
+    public void testDigestAuthValidInput() {
         System.out.println(baseURI);
         given().
                 auth().
-                preemptive().
-                basic("postman", "password").
-                when().
-                get("basic-auth").
+                digest("postman", "password")
+                .get("/basic-auth").
                 then().
                 statusCode(HttpStatus.SC_OK).
                 extract().
                 response().
                 prettyPrint();
+
     }
 
-    @Test(expectedExceptions = AssertionError.class)
+    @Test
     public void testDigestAuthInvalidInput() {
         given().
-                auth().preemptive().
-                basic("postmannbfkjne", "passwordkjnevln").
-                when().
-                get("basic-auth").
+                auth().
+                digest("postmannbfkjne", "passwordkjnevln")
+                .get("/basic-auth").
                 then().
-                statusCode(HttpStatus.SC_OK).
+                statusCode(HttpStatus.SC_UNAUTHORIZED).
                 extract().
                 response().
                 prettyPrint();

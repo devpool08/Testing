@@ -48,12 +48,12 @@
                     <include name="testDeleteRequest"/>
                 </methods>
             </class>
-            <class name="org.example.rendom_test.Lam.TestDeserialization">
+            <class name="org.example.restAssured.c_serialization.TestDeserialization">
                 <methods>
                     <include name="deserializeJsonResponse"/>
                 </methods>
             </class>
-            <class name="org.example.rendom_test.Lam.TestSerialization">
+            <class name="org.example.restAssured.c_serialization.TestSerialization">
                 <methods>
                     <include name="sendSerializedRequest"/>
                 </methods>

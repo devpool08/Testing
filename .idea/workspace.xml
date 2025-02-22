@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Update workspace configuration and .gitignore to exclude IDE files">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestDeserialization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestSerialization.java" afterDir="false" />
+    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Refactor package structure for serialization tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restAssured.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restAssured.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestSerialization1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestBasicAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestBasicAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestDigestAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestDigestAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestOAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestOAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestPreemptiveAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestPreemptiveAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740024260554</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Refactor package structure for serialization tests">
+      <option name="closed" value="true" />
+      <created>1740203535827</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740203535827</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +224,7 @@
     <MESSAGE value="Add new REST API tests and update project configuration for Testing module" />
     <MESSAGE value="Add .env file and update .gitignore to exclude environment variable files" />
     <MESSAGE value="Update workspace configuration and .gitignore to exclude IDE files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update workspace configuration and .gitignore to exclude IDE files" />
+    <MESSAGE value="Refactor package structure for serialization tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor package structure for serialization tests" />
   </component>
 </project>

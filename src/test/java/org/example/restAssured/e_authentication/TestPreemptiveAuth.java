@@ -15,28 +15,30 @@ public class TestPreemptiveAuth {
     }
 
     @Test
-    public void testPreemptiveAuthValidInput() {
+    public void testPreemptiveAuthValidInput() throws InterruptedException {
         System.out.println(baseURI);
         given().
                 auth().
-                digest("postman", "password")
-                .get("/basic-auth").
+                preemptive().
+                basic("postman", "password").
+                when().
+                get("basic-auth").
                 then().
                 statusCode(HttpStatus.SC_OK).
                 extract().
                 response().
                 prettyPrint();
-
     }
 
-    @Test(expectedExceptions = AssertionError.class)
+    @Test
     public void testPreemptiveAuthInvalidInput() {
         given().
-                auth().
-                digest("postmannbfkjne", "passwordkjnevln")
-                .get("/basic-auth").
+                auth().preemptive().
+                basic("postmannbfkjne", "passwordkjnevln").
+                when().
+                get("basic-auth").
                 then().
-                statusCode(HttpStatus.SC_OK).
+                statusCode(HttpStatus.SC_UNAUTHORIZED).
                 extract().
                 response().
                 prettyPrint();
