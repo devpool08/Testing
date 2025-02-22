@@ -1,8 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/PS/ProjectsFiles/TestNGTasks/TestNGAndRestAssured" parallel="methods" thread-count="5" >
+    <test verbose="2" preserve-order="true" name="C:/PS/ProjectsFiles/UnitTesting">
         <classes>
+            <class name="org.example.restAssured.e_authentication.TestBasicAuth">
+                <methods>
+                    <include name="testBasicAuth"/>
+                    <include name="testInvalidBasicAuth"/>
+                </methods>
+            </class>
+            <class name="org.example.restAssured.e_authentication.TestDigestAuth">
+                <methods>
+                    <include name="testDigestAuthValidInput"/>
+                    <include name="testDigestAuthInvalidInput"/>
+                </methods>
+            </class>
+            <class name="org.example.restAssured.e_authentication.TestOAuth">
+                <methods>
+                    <include name="testOAuthValidInput"/>
+                    <include name="testInvalidOAuthInvalidInput"/>
+                </methods>
+            </class>
+            <class name="org.example.restAssured.e_authentication.TestPreemptiveAuth">
+                <methods>
+                    <include name="testPreemptiveAuthValidInput"/>
+                    <include name="testPreemptiveAuthInvalidInput"/>
+                </methods>
+            </class>
+            <class name="org.example.restAssured.a_basic.TestRestAssured">
+                <methods>
+                    <include name="testOpenWebPage"/>
+                    <include name="testStatusCode"/>
+                    <include name="testContentType"/>
+                </methods>
+            </class>
+            <class name="org.example.restAssured.a_basic.TestRestAssuredStaticImpl">
+                <methods>
+                    <include name="testOpenWebPage"/>
+                    <include name="testStatusCode"/>
+                    <include name="testContentType"/>
+                </methods>
+            </class>
+            <class name="org.example.restAssured.b_get_post_methods.TestPutAndPost">
+                <methods>
+                    <include name="testPostRequest"/>
+                    <include name="testPutRequest"/>
+                    <include name="testDeleteRequest"/>
+                </methods>
+            </class>
+            <class name="org.example.rendom_test.Lam.TestDeserialization">
+                <methods>
+                    <include name="deserializeJsonResponse"/>
+                </methods>
+            </class>
+            <class name="org.example.rendom_test.Lam.TestSerialization">
+                <methods>
+                    <include name="sendSerializedRequest"/>
+                </methods>
+            </class>
+            <class name="org.example.restAssured.d_schemaValidation.TestJSONValidation">
+                <methods>
+                    <include name="givenUrl_whenJsonResponseConformsToSchema_thenCorrect"/>
+                </methods>
+            </class>
+            <class name="org.example.restAssured.usingHamcrest.RestAPITests">
+                <methods>
+                    <include name="givenUrl_whenSuccessOnGetsResponseAndJsonHasRequiredKV_thenCorrect"/>
+                    <include name="givenUrl_whenJsonResponseHasArrayWithGivenValuesUnderKey_thenCorrect"/>
+                    <include name="whenRequestGet_thenOK"/>
+                    <include name="whenRequestedPost_thenCreated"/>
+                    <include name="whenMeasureResponseTime_thenOK"/>
+                    <include name="whenLogRequest_thenOK"/>
+                    <include name="whenLogResponse_thenOK"/>
+                </methods>
+            </class>
+            <class name="org.example.testNG.TestAssertation">
+                <methods>
+                    <include name="testAssertTrue"/>
+                    <include name="testEquality"/>
+                    <include name="testNotEquals"/>
+                    <include name="testTrue"/>
+                    <include name="testFalse"/>
+                    <include name="testNull"/>
+                    <include name="testNotNull"/>
+                    <include name="testSame"/>
+                    <include name="testNotSame"/>
+                </methods>
+            </class>
             <class name="org.example.testNG.TestNGBasic">
                 <methods>
                     <include name="testFirstTest"/>
@@ -10,7 +94,6 @@
                     <include name="testThirdTest"/>
                     <include name="testFourthTest"/>
                     <include name="testFifthTest"/>
-                    <include name="testTestDemo"/>
                 </methods>
             </class>
             <class name="org.example.testNG.TestNGDataProvider">
@@ -20,7 +103,6 @@
                     <include name="testUpdateUser"/>
                 </methods>
             </class>
-            <class name="org.example.testNG.TestAssertation"/>
         </classes>
     </test>
 </suite>

@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Update workspace configuration and .gitignore to exclude IDE files">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestDeserialization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestSerialization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/a_basic/TestRestAssured.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/a_basic/TestRestAssured.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestSerialization1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestSerialization1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/usingHamcrest/RestAPITests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/usingHamcrest/RestAPITests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restAssured.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restAssured.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestSerialization1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,29 +96,7 @@
       <recent name="C:\PS\ProjectsFiles\UnitTesting\target\classes" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RestAssured">
-    <configuration name="RestAssured" type="TestNG">
-      <module name="Testing" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/restAssured.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners>
-        <listener class="org.testng.reporters.EmailableReporter2" />
-        <listener class="org.testng.reporters.FailedReporter" />
-      </listeners>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="TestNG" type="TestNG">
       <module name="Testing" />
       <shortenClasspath name="NONE" />
@@ -143,53 +121,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRestAssured.testOpenWebPage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.restAssured.a_basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.restAssured.a_basic" />
-      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.a_basic.TestRestAssured" />
-      <option name="METHOD_NAME" value="testOpenWebPage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestSerialization1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.restAssured.c_serialization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.restAssured.c_serialization" />
-      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.c_serialization.TestSerialization1" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="TestNG.RestAssured" />
-      <item itemvalue="TestNG.TestNG" />
-      <item itemvalue="TestNG.TestSerialization1" />
-      <item itemvalue="TestNG.TestRestAssured.testOpenWebPage" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="TestNG.TestSerialization1" />
-        <item itemvalue="TestNG.TestRestAssured.testOpenWebPage" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
