@@ -70,6 +70,12 @@
                     <include name="givenUrl_whenJsonResponseConformsToSchema_thenCorrect"/>
                 </methods>
             </class>
+            <class name="org.example.restAssured.f_breaking_down_url.TestUrlBreaking">
+                <methods>
+                    <include name="testGetUsers"/>
+                    <include name="testDeserialization"/>
+                </methods>
+            </class>
             <class name="org.example.restAssured.usingHamcrest.RestAPITests">
                 <methods>
                     <include name="givenUrl_whenSuccessOnGetsResponseAndJsonHasRequiredKV_thenCorrect"/>
