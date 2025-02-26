@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Refactor deserialization tests for improved clarity and add new test methods">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/f_breaking_down_url/TestUrlBreaking.java" afterDir="false" />
+    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Add new deserialization tests and refactor test structure for improved clarity">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/f_breaking_down_url/TestTaskObjective.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/c_serialization/TestSerialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/f_breaking_down_url/TestUrlBreaking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/f_breaking_down_url/TestUrlBreaking.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/MD_Files/RestAssured.md" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MD_Files/TestNG.md" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/org/example/restAssured/f_breaking_down_url/TestUrlBreaking.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/org/example/restAssured/f_breaking_down_url/TestUrlBreaking.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/testng.xml" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -53,53 +54,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.C:/PS/ProjectsFiles/UnitTesting/restAssured.xml.executor": "Run",
-    "TestNG.C:/PS/ProjectsFiles/UnitTesting/test-output/testng-failed.xml.executor": "Run",
-    "TestNG.RestAPITests.executor": "Run",
-    "TestNG.RestAPITests.givenUrl_whenSuccessOnGetsResponseAndJsonHasRequiredKV_thenCorrect.executor": "Run",
-    "TestNG.RestAPITests.whenLogRequest_thenOK.executor": "Run",
-    "TestNG.RestAPITests.whenMeasureResponseTime_thenOK.executor": "Run",
-    "TestNG.RestAPITests.whenRequestGet_thenOK.executor": "Run",
-    "TestNG.RestAPITests.whenRequestedPost_thenCreated.executor": "Run",
-    "TestNG.RestAssured.executor": "Run",
-    "TestNG.Serialization1.executor": "Run",
-    "TestNG.TestAssertation.executor": "Run",
-    "TestNG.TestBasicAuth.executor": "Run",
-    "TestNG.TestBasicAuth.testBasicAuth.executor": "Run",
-    "TestNG.TestDeserialization.executor": "Run",
-    "TestNG.TestDeserializer.executor": "Run",
-    "TestNG.TestDeserializer.testDeserializer.executor": "Run",
-    "TestNG.TestDeserializer.testDeserializer2.executor": "Run",
-    "TestNG.TestDigestAuth.executor": "Run",
-    "TestNG.TestJSONValidation.executor": "Run",
-    "TestNG.TestNG.executor": "Run",
-    "TestNG.TestOAuth.executor": "Run",
-    "TestNG.TestOAuth.testOAuthValidInput.executor": "Run",
-    "TestNG.TestPreemptiveAuth.executor": "Run",
-    "TestNG.TestPutAndPost.executor": "Run",
-    "TestNG.TestRAGetAndPost.executor": "Run",
-    "TestNG.TestRestAssured.testOpenWebPage.executor": "Run",
-    "TestNG.TestSerialization1.executor": "Run",
-    "TestNG.TestUrlBreaking.executor": "Run",
-    "TestNG.TestUrlBreaking.testGetUsers.executor": "Run",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/PS/ProjectsFiles/QEML-4-API-Testing/Bytes3/m2-pss",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/PS/ProjectsFiles/UnitTesting/restAssured.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/PS/ProjectsFiles/UnitTesting/test-output/testng-failed.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RestAPITests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RestAPITests.givenUrl_whenSuccessOnGetsResponseAndJsonHasRequiredKV_thenCorrect.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RestAPITests.whenLogRequest_thenOK.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RestAPITests.whenMeasureResponseTime_thenOK.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RestAPITests.whenRequestGet_thenOK.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RestAPITests.whenRequestedPost_thenCreated.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RestAssured.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Serialization1.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestAssertation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestBasicAuth.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestBasicAuth.testBasicAuth.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestDeserialization.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestDeserializer.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestDeserializer.testDeserializer.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestDeserializer.testDeserializer2.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestDigestAuth.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestJSONValidation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestNG.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestOAuth.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestOAuth.testOAuthValidInput.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestPreemptiveAuth.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestPutAndPost.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestRAGetAndPost.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestRestAssured.testOpenWebPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestSerialization.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestSerialization1.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestTaskObjective.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestUrlBreaking.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestUrlBreaking.testGetUsers.executor&quot;: &quot;Run&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/PS/ProjectsFiles/UI-Testing&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\PS\ProjectsFiles\UnitTesting\target\classes" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.TestTaskObjective">
     <configuration name="TestNG" type="TestNG">
       <module name="Testing" />
       <shortenClasspath name="NONE" />
@@ -122,6 +125,90 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSerialization" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.restAssured.c_serialization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.restAssured.c_serialization" />
+      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.c_serialization.TestSerialization" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTaskObjective" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.restAssured.f_breaking_down_url.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.restAssured.f_breaking_down_url" />
+      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.f_breaking_down_url.TestTaskObjective" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUrlBreaking" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.restAssured.f_breaking_down_url.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.restAssured.f_breaking_down_url" />
+      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.f_breaking_down_url.TestUrlBreaking" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUrlBreaking.testGetUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.restAssured.f_breaking_down_url.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.restAssured.f_breaking_down_url" />
+      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.f_breaking_down_url.TestUrlBreaking" />
+      <option name="METHOD_NAME" value="testGetUsers" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.TestNG" />
+      <item itemvalue="TestNG.TestSerialization" />
+      <item itemvalue="TestNG.TestTaskObjective" />
+      <item itemvalue="TestNG.TestUrlBreaking" />
+      <item itemvalue="TestNG.TestUrlBreaking.testGetUsers" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestTaskObjective" />
+        <item itemvalue="TestNG.TestSerialization" />
+        <item itemvalue="TestNG.TestUrlBreaking" />
+        <item itemvalue="TestNG.TestUrlBreaking.testGetUsers" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

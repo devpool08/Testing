@@ -46,8 +46,8 @@ class Entity{
 }
 
 public class TestUrlBreaking {
-    /// https://reqres.in/api/users?page=2  breaking down URL
-    /// (https://reqres.in baseURI
+    /// "[/api/users?page=2](https://reqres.in/api/users?page=2)"  breaking down URL
+    /// []"(https://reqres.in)" baseURI
     /// api is basePath
     /// users is the path Parameter
     /// page=2 is query parameter
@@ -55,39 +55,43 @@ public class TestUrlBreaking {
     private static String responseString;
     private ObjectMapper objectMapper;
 
+    ///baseURI-->basePath-->rootPath // although rootPath is not used we can use this in some other example
+
     @BeforeClass
     public void setup() {
         baseURI = "https://reqres.in";
         basePath = "/api";
-        //baseURI-->basePath-->rootPath // although rootPath is not used we can use this in some other example
         objectMapper = new ObjectMapper();
     }
+/// URL is [reqres.in/api/users?page=2&id=7](https://reqres.in/api/users?page=2&id=7)
 
     @Test
     public void testGetUsers() {
-        // URL is https://reqres.in/api/users?page=2
-        responseString= given().
-                queryParam("page", 2).
-                queryParam("id", 7).
+        responseString=
+                given().
+                    queryParam("page", 2).
+                    queryParam("id", 7).
                 when().
-                get(REQUEST_PATH).
+                    get(REQUEST_PATH).
                 then().
-                statusCode(HttpStatus.SC_OK).
-                extract().
-                body().
-                asPrettyString();
+                    statusCode(HttpStatus.SC_OK).
+                    extract().
+                    body().
+                    asPrettyString();
         System.out.println(responseString);
     }
     @Test(dependsOnMethods = "testGetUsers")
     @SneakyThrows
     public void testDeserialization() {
-        Entity entity = objectMapper.readValue(responseString, Entity.class);
+        Entity entity =
+                objectMapper.
+                    readValue(responseString, Entity.class);
         System.out.println(entity.toString());
     }
 }
 /*
 * This is the response
-* {
+    {
     "data": {
         "id": 7,
         "name": "sand dollar",

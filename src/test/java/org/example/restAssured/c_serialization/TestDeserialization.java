@@ -53,7 +53,7 @@ public class TestDeserialization {
     }
 
     @Test
-    public void deserializeJsonResponse2() throws JsonProcessingException {
+    public void deserializeJsonResponse2() {
         Product product = given().get(REQUEST_PATH).then().extract().body().as(Product.class);
         System.out.println(product.toString());
     }

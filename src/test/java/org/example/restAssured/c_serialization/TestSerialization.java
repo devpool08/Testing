@@ -2,6 +2,7 @@ package org.example.restAssured.c_serialization;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.restassured.http.ContentType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -38,6 +39,7 @@ public class TestSerialization {
         entity = new Entity("john", "test");
         String jsonSchema = objectMapper.writeValueAsString(entity);
         given().
+                contentType(ContentType.JSON).
                 body(jsonSchema).
                 when().
                 post(REQUEST_PATH).
