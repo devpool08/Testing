@@ -56,5 +56,4 @@ public class TestNGDataProvider {
         }
         Assert.assertTrue(userFound, "User Not Found");
     }
-
 }

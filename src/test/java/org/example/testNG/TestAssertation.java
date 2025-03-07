@@ -10,7 +10,6 @@ public class TestAssertation {
         assert condition : "Condition should be true";
     }
 
-
     @Test
     public void testEquality() {
         Assert.assertEquals("Hello", "Hello", "Optional failure message");
