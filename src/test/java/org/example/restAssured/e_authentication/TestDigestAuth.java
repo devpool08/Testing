@@ -1,5 +1,6 @@
 package org.example.restAssured.e_authentication;
 
+import io.restassured.specification.ResponseSpecification;
 import org.apache.http.HttpStatus;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
