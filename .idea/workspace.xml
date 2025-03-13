@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Add new REST API tests and update project configuration for improved functionality">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/f_breaking_down_url/TestBreakURLFinal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/z_prep/TestLocalApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/z_prep/TestPract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/z_prep/TestSerlAndDeserl.java" afterDir="false" />
+    <list default="true" id="894d0551-094f-4c84-a4bc-64819641628a" name="Changes" comment="Add new deserialization tests and refactor existing test structure for improved clarity">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/z_prep/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/z_prep/TestGetUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/icon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/d_schemaValidation/TestJSONValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/d_schemaValidation/TestJSONValidation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestDigestAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/restAssured/e_authentication/TestDigestAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testNG/TestAssertation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testNG/TestAssertation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testNG/TestNGDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testNG/TestNGDataProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,6 @@
     "TestNG.TestAssertation.executor": "Run",
     "TestNG.TestBasicAuth.executor": "Run",
     "TestNG.TestBasicAuth.testBasicAuth.executor": "Run",
-    "TestNG.TestBreakURLFinal.executor": "Run",
     "TestNG.TestDeserialization.executor": "Run",
     "TestNG.TestDeserializer.executor": "Run",
     "TestNG.TestDeserializer.testDeserializer.executor": "Run",
@@ -84,27 +83,23 @@
     "TestNG.TestDigestAuth.executor": "Run",
     "TestNG.TestGetUser.executor": "Run",
     "TestNG.TestJSONValidation.executor": "Run",
-    "TestNG.TestLocalApi.executor": "Run",
     "TestNG.TestNG.executor": "Run",
     "TestNG.TestOAuth.executor": "Run",
     "TestNG.TestOAuth.testOAuthValidInput.executor": "Run",
-    "TestNG.TestPract.executor": "Run",
     "TestNG.TestPreemptiveAuth.executor": "Run",
     "TestNG.TestPutAndPost.executor": "Run",
     "TestNG.TestRAGetAndPost.executor": "Run",
     "TestNG.TestRestAssured.testOpenWebPage.executor": "Run",
     "TestNG.TestSerialization.executor": "Run",
     "TestNG.TestSerialization1.executor": "Run",
-    "TestNG.TestSerlAndDeserl.executor": "Run",
-    "TestNG.TestSerlAndDeserl.testSerilAndDeserl.executor": "Run",
     "TestNG.TestTaskObjective.executor": "Run",
     "TestNG.TestUrlBreaking.executor": "Run",
     "TestNG.TestUrlBreaking.testGetUsers.executor": "Run",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/PS/APITestDempApp",
-    "settings.editor.selected.configurable": "preferences.editor"
+    "last_opened_file_path": "C:/PS/ProjectsFiles/UI-Testing",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -112,41 +107,7 @@
       <recent name="C:\PS\ProjectsFiles\UnitTesting\target\classes" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestLocalApi">
-    <configuration name="TestBreakURLFinal" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.restAssured.f_breaking_down_url.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.restAssured.f_breaking_down_url" />
-      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.f_breaking_down_url.TestBreakURLFinal" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestLocalApi" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.restAssured.z_prep.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.restAssured.z_prep" />
-      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.z_prep.TestLocalApi" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="TestNG" type="TestNG">
       <module name="Testing" />
       <shortenClasspath name="NONE" />
@@ -169,16 +130,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPract" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSerialization" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.restAssured.z_prep.*" />
+          <option name="PATTERN" value="org.example.restAssured.c_serialization.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.restAssured.z_prep" />
-      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.z_prep.TestPract" />
+      <option name="PACKAGE_NAME" value="org.example.restAssured.c_serialization" />
+      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.c_serialization.TestSerialization" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -186,16 +147,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSerlAndDeserl" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTaskObjective" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.restAssured.z_prep.*" />
+          <option name="PATTERN" value="org.example.restAssured.f_breaking_down_url.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.restAssured.z_prep" />
-      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.z_prep.TestSerlAndDeserl" />
+      <option name="PACKAGE_NAME" value="org.example.restAssured.f_breaking_down_url" />
+      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.f_breaking_down_url.TestTaskObjective" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -203,17 +164,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSerlAndDeserl.testSerilAndDeserl" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUrlBreaking" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.restAssured.z_prep.*" />
+          <option name="PATTERN" value="org.example.restAssured.f_breaking_down_url.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.restAssured.z_prep" />
-      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.z_prep.TestSerlAndDeserl" />
-      <option name="METHOD_NAME" value="testSerilAndDeserl" />
+      <option name="PACKAGE_NAME" value="org.example.restAssured.f_breaking_down_url" />
+      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.f_breaking_down_url.TestUrlBreaking" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUrlBreaking.testGetUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.restAssured.f_breaking_down_url.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.restAssured.f_breaking_down_url" />
+      <option name="MAIN_CLASS_NAME" value="org.example.restAssured.f_breaking_down_url.TestUrlBreaking" />
+      <option name="METHOD_NAME" value="testGetUsers" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -223,19 +201,17 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.TestNG" />
-      <item itemvalue="TestNG.TestLocalApi" />
-      <item itemvalue="TestNG.TestPract" />
-      <item itemvalue="TestNG.TestSerlAndDeserl" />
-      <item itemvalue="TestNG.TestSerlAndDeserl.testSerilAndDeserl" />
-      <item itemvalue="TestNG.TestBreakURLFinal" />
+      <item itemvalue="TestNG.TestSerialization" />
+      <item itemvalue="TestNG.TestTaskObjective" />
+      <item itemvalue="TestNG.TestUrlBreaking" />
+      <item itemvalue="TestNG.TestUrlBreaking.testGetUsers" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestLocalApi" />
-        <item itemvalue="TestNG.TestPract" />
-        <item itemvalue="TestNG.TestSerlAndDeserl" />
-        <item itemvalue="TestNG.TestSerlAndDeserl.testSerilAndDeserl" />
-        <item itemvalue="TestNG.TestBreakURLFinal" />
+        <item itemvalue="TestNG.TestTaskObjective" />
+        <item itemvalue="TestNG.TestSerialization" />
+        <item itemvalue="TestNG.TestUrlBreaking" />
+        <item itemvalue="TestNG.TestUrlBreaking.testGetUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -360,15 +336,7 @@
       <option name="project" value="LOCAL" />
       <updated>1740554354692</updated>
     </task>
-    <task id="LOCAL-00015" summary="Add new REST API tests and update project configuration for improved functionality">
-      <option name="closed" value="true" />
-      <created>1741327826903</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1741327826903</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,7 +361,6 @@
     <MESSAGE value="Add deserialization tests and refactor test structure for improved clarity" />
     <MESSAGE value="Refactor deserialization tests for improved clarity and add new test methods" />
     <MESSAGE value="Add new deserialization tests and refactor existing test structure for improved clarity" />
-    <MESSAGE value="Add new REST API tests and update project configuration for improved functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new REST API tests and update project configuration for improved functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new deserialization tests and refactor existing test structure for improved clarity" />
   </component>
 </project>

@@ -15,7 +15,6 @@ public class TestJSONValidation {
     @Test
     public void givenUrl_whenJsonResponseConformsToSchema_thenCorrect() {
         get("users/2").then().assertThat()
-                .body(
-                        matchesJsonSchemaInClasspath("schema.json"));
+                .body(matchesJsonSchemaInClasspath("schema.json"));
     }
 }
