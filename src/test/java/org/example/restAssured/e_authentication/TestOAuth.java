@@ -3,6 +3,7 @@ package org.example.restAssured.e_authentication;
 import static io.restassured.RestAssured.*;
 
 import io.github.cdimascio.dotenv.Dotenv;
+import io.restassured.specification.RequestSpecification;
 import org.apache.http.HttpStatus;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -21,6 +22,7 @@ public class TestOAuth {
 
     @Test
     public void testOAuthValidInput() {
+//        RequestSpecification spec=new RequestSpecBuilder().setAuth(oauth2(TOKEN)).build();
         System.out.println(baseURI);
         given().
                 auth().

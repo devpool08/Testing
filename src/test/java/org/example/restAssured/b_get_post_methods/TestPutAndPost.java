@@ -20,7 +20,7 @@ public class TestPutAndPost {
         given().body("{\n" +
                 "    \"name\": \"morpheus\",\n" +
                 "    \"job\": \"leader\"\n" +
-                "}").post(POST_URL).then().statusCode(201);
+                "}").when().post(POST_URL).then().statusCode(201);
     }
 
     @Test
